@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/NET/dc_owl2dl/elements</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-10T10:00:00</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>Coursework Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This ontology defines the model for coursework resource description, to help organize the coursework materials. The effectiveness of the coursework can also be reflected to enable automated coursework distribution to maintain the coverage, difficulty level, consistency, etc.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AdoptionFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdoptionFrequencyInScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdoptionPossibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdoptionPossibilityInScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comprehensiveness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseworkType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyLevelCollected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyLevelExpected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseDisjointGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helpfulness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeHierarchy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReferenceUrl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Textbook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theorem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsedTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubunit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedInScenario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AritificialIntelligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataStructuresAlgorithms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiscreteStructures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Easy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EveryOtherYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EverySemester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EveryYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumHigh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumLess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Robotics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Summer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdoptionFrequency"/>
+        <Class IRI="#OperatingProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptionFrequencyInScenario"/>
+        <Class IRI="#AdoptionFrequency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptionFrequencyInScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedInScenario"/>
+            <Class IRI="#CourseworkType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptionPossibility"/>
+        <Class IRI="#OperatingProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptionPossibilityInScenario"/>
+        <Class IRI="#AdoptionPossibility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptionPossibilityInScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedInScenario"/>
+            <Class IRI="#CourseworkType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Algorithm"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chapter"/>
+        <Class IRI="#Textbook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comprehensiveness"/>
+        <Class IRI="#MeasurementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concept"/>
+        <Class IRI="#Topic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseworkType"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseworkType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#UsedTime"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructure"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyLevel"/>
+        <Class IRI="#MeasurementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyLevelCollected"/>
+        <Class IRI="#DifficultyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifficultyLevelExpected"/>
+        <Class IRI="#DifficultyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Formula"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Theorem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasKnowledge"/>
+            <Class IRI="#Knowledge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise"/>
+        <Class IRI="#ExerciseGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseDisjointGroup"/>
+        <Class IRI="#ExerciseGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Reference"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#Property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Concept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Knowledge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExerciseGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedInScenario"/>
+            <Class IRI="#CourseworkType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formula"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helpfulness"/>
+        <Class IRI="#MeasurementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnowledgeHierarchy"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReferenceUrl"/>
+        <Class IRI="#Reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Section"/>
+        <Class IRI="#Chapter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Section"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSubunit"/>
+            <Class IRI="#Section"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semester"/>
+        <Class IRI="#UsedTime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Textbook"/>
+        <Class IRI="#CourseContent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Textbook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Concept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Textbook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Textbook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isRelatedTo"/>
+            <Class IRI="#Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theorem"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topic"/>
+        <Class IRI="#Discipline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DataStructure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsedTime"/>
+        <Class IRI="#MeasurementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#UsedTime"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#AritificialIntelligence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CourseworkType"/>
+        <NamedIndividual IRI="#Assignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#DataStructuresAlgorithms"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#DiscreteStructures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Easy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdoptionFrequency"/>
+        <NamedIndividual IRI="#EveryOtherYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdoptionFrequency"/>
+        <NamedIndividual IRI="#EverySemester"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdoptionFrequency"/>
+        <NamedIndividual IRI="#EveryYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Semester"/>
+        <NamedIndividual IRI="#Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Hard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#MediumHigh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#MediumLess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CourseworkType"/>
+        <NamedIndividual IRI="#Project"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CourseworkType"/>
+        <NamedIndividual IRI="#Quiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Robotics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Semester"/>
+        <NamedIndividual IRI="#Spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Semester"/>
+        <NamedIndividual IRI="#Summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CourseworkType"/>
+        <NamedIndividual IRI="#Test"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdoptionPossibility</IRI>
+        <Literal>This could be an implication of the importance of the Exercise (group).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comprehensiveness</IRI>
+        <Literal>Some exercises can be linked to several topics/chapters, and reflect students&apos; understanding in a comprehensive extent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DifficultyLevelCollected</IRI>
+        <Literal>If the corusework material has been used before, then the difficulty level can be estimated statistically based on students&apos; performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DifficultyLevelExpected</IRI>
+        <Literal>The difficulty level assigned by the instructor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExerciseDisjointGroup</IRI>
+        <Literal>Exercises in this group can be substituted by each other. So these are good ones for rotation through semesters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExerciseGroup</IRI>
+        <Literal>Some exercises are grouped, and could share some general description, or could be substituted by other exercises in the same group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Helpfulness</IRI>
+        <Literal>Collected by students&apos; feedback or chance to be added to Favorates collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Textbook</IRI>
+        <Literal>Stuart Russell, Peter Norvig, Artificial Intelligence: A Modern Approach, 3rd Edition, Pearson, 2010.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#isRelatedTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#normalizedString">Database Test</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

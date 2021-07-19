@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2"
+     xml:base="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#">
+
+    <owl:Ontology rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2">
+        <owl:imports rdf:resource="http://purl.org/NET/dc_owl2dl/elements"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-10T10:00:00</dc:date>
+        <dc:title>Coursework Ontology</dc:title>
+        <rdfs:comment>This ontology defines the model for coursework resource description, to help organize the coursework materials. The effectiveness of the coursework can also be reflected to enable automated coursework distribution to maintain the coverage, difficulty level, consistency, etc.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasKnowledge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasKnowledge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasSubunit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasSubunit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasTopic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToConcept">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToTopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isUsedInScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isUsedInScenario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#courseNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#courseNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#keyKnowledge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#keyKnowledge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#OperatingProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequencyInScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequencyInScenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isUsedInScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionPossibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionPossibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#OperatingProperty"/>
+        <rdfs:comment>This could be an implication of the importance of the Exercise (group).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionPossibilityInScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionPossibilityInScenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionPossibility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isUsedInScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Chapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Chapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Textbook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Comprehensiveness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Comprehensiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty"/>
+        <rdfs:comment>Some exercises can be linked to several topics/chapters, and reflect students&apos; understanding in a comprehensive extent.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DataStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#UsedTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DataStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DataStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevelCollected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevelCollected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+        <rdfs:comment>If the corusework material has been used before, then the difficulty level can be estimated statistically based on students&apos; performance.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevelExpected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevelExpected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+        <rdfs:comment>The difficulty level assigned by the instructor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Formula"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Operation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Theorem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasKnowledge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasTopic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseDisjointGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseDisjointGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseGroup"/>
+        <rdfs:comment>Exercises in this group can be substituted by each other. So these are good ones for rotation through semesters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ExerciseGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedToTopic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isUsedInScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Some exercises are grouped, and could share some general description, or could be substituted by other exercises in the same group.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Formula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Helpfulness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Helpfulness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty"/>
+        <rdfs:comment>Collected by students&apos; feedback or chance to be added to Favorates collection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#KnowledgeHierarchy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#KnowledgeHierarchy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#OperatingProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#OperatingProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Quality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Reference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ReferenceUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ReferenceUrl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Chapter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#hasSubunit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#UsedTime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Textbook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Textbook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stuart Russell, Peter Norvig, Artificial Intelligence: A Modern Approach, 3rd Edition, Pearson, 2010.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#UsedTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#UsedTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MeasurementProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#UsedTime"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AritificialIntelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AritificialIntelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Assignment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Assignment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#BaseBExpansion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#BaseBExpansion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ComputerScience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#ComputerScience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Congruence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Congruence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DataStructuresAlgorithms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DataStructuresAlgorithms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DiscreteStructures -->
+
+<!-- LINK ALL THIS  -->
+<!-- SQL forwords chain and back chain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DiscreteStructures">
+        <rdf:type rdf:resource="untitled-ontology-2:DifficultyLevelCollected"/>
+
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Congruence"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Function"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Induction"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Predicate"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Proposition"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Recursion"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Sequence"/>
+        <untitled-ontology-2:hasConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Set"/>
+
+        <untitled-ontology-2:hasTopic rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#BaseBExpansion"/>
+        <untitled-ontology-2:hasTopic rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#TimeComplexity"/>
+
+        <untitled-ontology-2:courseNumber>CMSC 2123</untitled-ontology-2:courseNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Easy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Easy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EveryOtherYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EveryOtherYear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EverySemester -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EverySemester">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EveryYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#EveryYear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#AdoptionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise1-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise1-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Predicate"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Proposition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise1-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise1-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Predicate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Set"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Function"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Sequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise2-4">
+
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Sequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise3-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise3-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToTopic rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#TimeComplexity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise3-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise3-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToTopic rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#TimeComplexity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise4-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise4-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToTopic rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#BaseBExpansion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise4-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise4-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Congruence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise5-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise5-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Induction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise5-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise5-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Exercise"/>
+        <untitled-ontology-2:isRelatedToConcept rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Recursion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Fall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Fall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Function -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Function">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Hard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Hard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Induction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Induction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MediumHigh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MediumHigh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MediumLess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#MediumLess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#DifficultyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Predicate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Predicate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Proposition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Proposition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Quiz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Quiz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Recursion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Recursion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Robotics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Robotics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Sequence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Sequence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Set -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Set">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Spring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Summer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Test -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Test">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#CourseworkType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#TimeComplexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#TimeComplexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/szhang10/ontologies/2021/5/untitled-ontology-2#Topic"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
